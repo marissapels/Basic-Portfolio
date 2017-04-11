@@ -27,18 +27,18 @@
 			<form action="/action_page.php">
 				Name: 
 				<br>
-				<input type="text" name="name" value="John Smith" id="inputName">
+				<input type="text" name="name" id="inputName" placeholder="John Smith" onclick= "if (this.placeholder=='John Smith') this.placeholder='';" >
 				<br><br>
 				Email:
 				<br>
-				<input type ="text" name="email" value="example@gmail.com" id="inputEmail">
+				<input type ="text" name="email" placeholder="example@gmail.com" id="inputEmail" onfocus= "if (this.placeholder=='example@gmail.com') this.placeholder='';">
 				<br><br>
 				Message:
 				<br>
 				<textarea id="inputMessage">
 				</textarea>
 				<br><br>
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" class="submit">
 			</form>
 		</section>
 

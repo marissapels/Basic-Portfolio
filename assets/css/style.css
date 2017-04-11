@@ -27,7 +27,7 @@ h1 {
     color: #ffffff;
     font-family: "Georgia", Times, "Times New Roman", serif;
     padding: 30px;
-    margin: 0px 0px 0px 200px;
+    margin: 0 10%;
     float: left;
 
 
@@ -54,6 +54,10 @@ nav a {
     color: #777777;
 }
 
+nav a:hover{
+	background-color:#dddddd;
+}
+
 a {
 	text-decoration: none;
 }
@@ -61,19 +65,28 @@ a {
 .mainContent {
     overflow: auto;
     width: 960px;
-    margin: 0px 200px;
+    margin: 0 10%;
 
+}
+
+.mainContent:after{ /*sticky footer*/
+	content:"";
+	display:block;
+}
+
+footer, .mainContent:after{ /*sticky footer*/
+	padding: 20px;
 }
 
 footer {
     background: #666666;
-    padding: 20px;
     color: #ffffff;
     border-top: 5px solid #4aaaa5;
     text-align: center;
     margin-top: 100px;
 	position: relative;
     bottom: 0px;
+    font-size:14px;
 }
 
 .connect {
@@ -85,6 +98,14 @@ footer {
     float: right;
 }
 
+.social {
+	width: 50px;
+    margin: 0px 5px 0px 5px;
+}
+
+.social:hover {
+	border: 3px solid #cccccc;
+}
 
 /*Styles for Index page*/
 .info {
@@ -95,13 +116,6 @@ footer {
     overflow: auto;
     float: left;
     line-height: 1.5;
-}
-
-
-
-.social {
-	width: 50px;
-    margin: 0px 5px 0px 5px;
 }
 
 #marissa {
@@ -122,9 +136,21 @@ footer {
 }
 
 .portfolioLinks img {
-    width: 300px;
-    float: left;
-    padding: 5px;
+	width: 275px;
+    margin: 10px
+}
+
+.wrapper1 , .wrapper2, .wrapper3, .wrapper4, .wrapper5 {
+	position:relative;
+
+}
+
+.wrapper1, .wrapper3, .wrapper5 {
+	float:left;
+}
+
+.wrapper2, .wrapper4{
+	float:right;
 }
 
 .portfolioLinks h2 {
@@ -135,8 +161,19 @@ footer {
     text-align: center;
     padding: 10px;
     z-index: 5;
-    float: left;
+    font-size: 20px;
+    width: 275px;
+    margin: 10px;
+    position: absolute;
+    bottom: 10px;
 }
+
+.wrapper1:hover h2, .wrapper2:hover h2, .wrapper3:hover h2, .wrapper4:hover h2, .wrapper5:hover h2{
+	font-size:25px;
+}
+
+
+
 
 /*Styles for Contact Page*/
 
@@ -151,8 +188,18 @@ footer {
 
 #inputName, #inputEmail, #inputMessage {
 	width:100%;
+	font-style:italic;
+	color:#777777;
 }
 
+
 #inputMessage {
-	height: 200px;
+	height: 250px;
 }
+
+.submit {
+	background: #4aaaa5;
+    color: #ffffff;
+    padding:10px;
+}
+
