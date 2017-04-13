@@ -19,6 +19,7 @@ header {
     margin-bottom: 40px;
     position: relative;
     top: 0px;
+    width:100%;
 
 }
 
@@ -69,14 +70,14 @@ a {
 
 }
 
-.mainContent:after{ /*sticky footer*/
+.mainContent:after{ 
 	content:"";
 	display:block;
 }
 
-footer, .mainContent:after{ /*sticky footer*/
-	padding: 20px;
-}
+footer, .mainContent:after{ 
+	padding: 20px; 
+} 
 
 footer {
     background: #666666;
@@ -85,7 +86,9 @@ footer {
     text-align: center;
     margin-top: 100px;
 	position: relative;
+	width:100%;
     bottom: 0px;
+    left:0px;
     font-size:14px;
 }
 
@@ -159,7 +162,7 @@ footer {
     font-family: "Georgia", Times, "Times New Roman", serif;
     border: none;
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
     z-index: 5;
     font-size: 20px;
     width: 275px;
@@ -169,7 +172,7 @@ footer {
 }
 
 .wrapper1:hover h2, .wrapper2:hover h2, .wrapper3:hover h2, .wrapper4:hover h2, .wrapper5:hover h2{
-	font-size:25px;
+	font-size:24px;
 }
 
 
